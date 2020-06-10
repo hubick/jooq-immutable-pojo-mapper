@@ -13,3 +13,9 @@ The ImmutablePOJORecordMapper supplied here will simply invoke an accessible con
 attempting to modify the target object, so it's module doesn't need to be open to JOOQ.
 
 All other mappings will be deferred to JOOQ's DefaultRecordMapperProvider.
+
+
+You can use this to replace the DefaultRecordMapperProvider like this:
+
+final DSLContext dslContext = DSL.using(SQLDialect.DEFAULT);
+dslContext.configuration().set(new ImmutablePOJORecordMapper(dslContext.configuration()));
