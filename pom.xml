@@ -3,7 +3,7 @@
 
   <groupId>com.hubick.util.jooq</groupId>
   <artifactId>jooq-immutable-pojo-mapper</artifactId>
-  <version>3.13.1</version>
+  <version>3.13.1.1</version>
   <packaging>jar</packaging>
 
   <name>JOOQ Immutable POJO Record Mapper</name>
